@@ -46,7 +46,7 @@ const getRecipe = async(ingredients) => {
     setloading(true);
     setErr(null)
 const ingredientsString = ingredients.join(",")
-const url = "/api/";
+const url = `${import.meta.env.VITE_API_BASE_URL}/api/`;
 const requestBody = {
     messages: [
         {
