@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Ephesis&family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Display&family=Merienda:wght@300..900&family=Tangerine:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@theme {
+  --font-cormorant-garamond: "Cormorant Garamond", serif;
+  --font-ephesis: "Ephesis", cursive;
+  --font-indie-flower: "Indie Flower", cursive;
+  --font-inter: "Inter", sans-serif;
+  --font-libre-caslon-display: "Libre Caslon Display", serif;
+  --font-merienda: "Merienda", cursive;
+  --font-tangerine: "Tangerine", cursive;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-inter);
+  }
+}
+
+.flex-centered {
+  @apply flex justify-center items-center;
+}
+
+.min-text {
+  font-size: min(4vw, 20px);
+}
+
+.button-style {
+  @apply border font-bold text-[#edf0ed] border-[#002100] bg-gradient-to-tl from-[#A33232] to-[#743030] shadow-md font-cormorant-garamond;
+}
+
+.input-style {
+  @apply rounded-md bg-gradient-to-tl from-[#e2e9e2] to-[#edf0ed] border border-amber-50 ring-[0.2px] hover:from-transparent hover:to-transparent hover:border-[#90a46d] hover:bg-[#e4e1ea] focus:bg-[#f2effa] focus:ring-[0.1px] focus:outline-0 focus:border-[#90a46d] text-[#670202] placeholder:text-[16px] placeholder:text-[#5a2a269d];
+}
