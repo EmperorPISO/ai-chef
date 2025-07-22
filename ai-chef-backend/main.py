@@ -18,7 +18,7 @@ app = FastAPI()
 # Allow frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://ai-chef-piso.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )

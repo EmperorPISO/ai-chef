@@ -49,7 +49,7 @@ export default function RecipeList({recipe, resetPage, setSavedRecipes, recipeNa
          </div>
          {showPrompt && 
          <div className='fixed inset-0 flex-centered w-screen h-screen bg-[#fdf5f5] font-cormorant-garamond z-20'>
-            <div className=' w-[80%] flex-centered border-4 border-[#AD3C3C] backdrop-blur-3xl flex-col mx-auto h-[50vh] rounded-2xl bg-[#D76E6E] shadow-2xl shadow-[#308A30]'>
+            <div className=' w-[80%] max-w-3xl flex-centered border-4 border-[#AD3C3C] backdrop-blur-3xl flex-col mx-auto h-[50vh] rounded-2xl bg-[#D76E6E] shadow-2xl shadow-[#308A30]'>
             <h3 className='font-black text-[#7F1515] text-3xl mb-2'>Recipe Name</h3>
             <input
             ref={inputRef}
