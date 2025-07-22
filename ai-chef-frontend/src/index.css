@@ -35,7 +35,20 @@ body,
 }
 
 .min-text {
-  font-size: min(4vw, 20px);
+  font-size: min(4vw, 18px);
+}
+.min-text-2 {
+  font-size: min(6vw, 24px);
+}
+.min-height-err {
+  height: min(120px, 14vh);
+}
+.min-w-header {
+  width: min(16vw, 45px);
+}
+
+.min-text-header {
+  font-size: min(16vw, 45px);
 }
 
 .button-style {
@@ -43,5 +56,9 @@ body,
 }
 
 .input-style {
-  @apply rounded-md bg-gradient-to-tl from-[#e2e9e2] to-[#edf0ed] border border-amber-50 ring-[0.2px] hover:from-transparent hover:to-transparent hover:border-[#90a46d] hover:bg-[#e4e1ea] focus:bg-[#f2effa] focus:ring-[0.1px] focus:outline-0 focus:border-[#90a46d] text-[#670202] placeholder:text-[16px] placeholder:text-[#5a2a269d];
+  @apply rounded-md bg-gradient-to-tl from-[#e2e9e2] to-[#edf0ed] border border-amber-50 ring-[0.2px] hover:from-transparent hover:to-transparent hover:border-[#90a46d] hover:bg-[#e4e1ea] focus:bg-[#f2effa] focus:ring-[0.1px] focus:outline-0 focus:border-[#90a46d] text-[#670202] placeholder:text-[#5a2a269d];
+}
+
+.gap-1 {
+  gap: min(48px, 9vw);
 }

@@ -45,10 +45,10 @@ return(
     className='flex border rounded-3xl my-[50px] border-[#90a46d] shadow-md shadow-[#550000] bg-gradient-to-tl from-[#e2e9e2] to-[#edf0ed] w-[90%] max-w-[500px] h-[150px] scroll-mt-1 '
     >
         <div
-        className='my-[30px] mx-1 flex-col flex-centered gap-2 w-[70%]'><h3 className='mx-auto font-bold font-cormorant-garamond text-[24px] '>What can our chef do with these?</h3>
-        <p className='font-merienda'>Generate a recipe base on your ingredients</p></div>
+        className='my-[30px] mx-1 flex-col flex-centered gap-2 w-[70%]'><h3 className='mx-auto font-bold font-cormorant-garamond min-text-2 '>What can our chef do with these?</h3>
+        <p className='text-center font-merienda min-text'>Generate a recipe base on your ingredients</p></div>
         <button 
-        className='mx-auto my-auto w-[25%] right-[100px] h-[40px] rounded-2xl button-style '
+        className='mx-auto my-auto w-[25%] right-[100px] h-[40px] rounded-2xl min-text button-style '
         type="button" onClick={()=>clicked(ingredients)}>Get Recipe</button>
      </div>}
      {listVisibility && <div className='flex-centered flex-col '>

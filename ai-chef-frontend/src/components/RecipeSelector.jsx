@@ -52,7 +52,7 @@ export default function RecipeSelector({savedRecipes, setSavedRecipes}) {
             setTimeout(() => setCopied('idle'), 3000)
         }
     }
-    const copyText = copied === true ? 'Copied !' : copied === false ? 'Copy Failed!' : 'Copy Recipe'
+    const copyText = copied === true ? 'Copied !' : copied === false ? 'Copy Failed!' : 'Copy'
     const selectedRecipe = savedRecipes.find( recipe => recipe.id === selectedId)
 
 
@@ -60,11 +60,11 @@ export default function RecipeSelector({savedRecipes, setSavedRecipes}) {
         <div className="flex-centered">
         {showDropBox && <div
         className="flex-col flex-centered w-[80%] h-[25vh] my-15 font-merienda border-1 gap-5 rounded-3xl border-[#9D0004] shadow-sm shadow-[#308A30]">
-            <h3 className="text-2xl mx-auto text-[#002100] ">View saved Recipes</h3>
+            <h3 className="min-text mx-auto text-[#002100] ">View saved Recipes</h3>
             <select id="dropdown" 
             value={selectedId} 
             onChange={handleChange}
-            className="text-center h-10  input-style">
+            className="text-center min-text h-10 w-[90%] input-style">
                 <option value='' className="text-center">-- Select --</option>
                 {[...savedRecipes].sort((a,b) =>
                 a.name.localeCompare(b.name)).map(recipe => (
@@ -75,17 +75,18 @@ export default function RecipeSelector({savedRecipes, setSavedRecipes}) {
 
         {displayRecipe && selectedRecipe &&
         <div
-        className="mt-10 font-merienda text-[18px] flex-centered flex-col">
+        className="mt-10 font-merienda min-text flex-centered flex-col">
             <div ref={renderedRef}
+            className="p-2"
             ><ReactMarkdown>
             {selectedRecipe.recipeMarkdown}</ReactMarkdown></div>
-            <div className="w-[90%] text-[17px] flex items-center gap-12">
+            <div className="w-[90%] min-text my-3 flex items-center gap-1">
             <button onClick={defaults}
              className="button-style rounded-md h-[30px] w-[25%]">
             Back
             </button>
             <button disabled={!selectedId} onClick={() => deleteRecipe(selectedId)}
-             className="button-style rounded-md h-[30px] w-[25%]">Delete Recipe</button>
+             className="button-style rounded-md h-[30px] w-[25%]">Delete</button>
             <button 
             disabled={copied !== 'idle'}
             onClick={copyRecipe}
