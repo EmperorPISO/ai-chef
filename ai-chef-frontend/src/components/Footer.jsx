@@ -8,11 +8,6 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferer"
             >linkedin</a></p>
-            
-            
-
-            {/* className="flex-centered w-3xl h-14 text-[#550000] bg-[#cbe8cb]" */}
-
         </footer>
     )
 }
