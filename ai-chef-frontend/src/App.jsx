@@ -8,7 +8,7 @@ export default function App() {
 return(
   <div className='flex-col flex-centered  min-h-screen'>
     <div>
-      <div className=' flex-grow max-w-3xl px-1 w-full rounded-md bg-[#F2F3F2] min-h-[90vh] shadow-lg shadow-[#2d882d30]'>
+      <div className=' flex-grow max-w-3xl w-full rounded-md bg-[#F2F3F2] min-h-[90vh] shadow-lg shadow-[#2d882d30]'>
       <Header />
       <MainComponent />
     </div>
