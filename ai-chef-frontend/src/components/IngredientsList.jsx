@@ -52,7 +52,7 @@ return(
         type="button" onClick={()=>clicked(ingredients)}>Get Recipe</button>
      </div>}
      {listVisibility && <div className='flex-centered flex-col '>
-      <h2 className="font-black text-3xl font-libre-caslon-display mb-5 text-[#002100]">Here are your ingredients at hand:</h2>
+      <h2 className="font-black min-text-2 font-libre-caslon-display mb-5 text-[#002100]">Here are your ingredients at hand:</h2>
      <div className="w-[100%]">{ingredientsListed}</div></div>}
     
     </section>
