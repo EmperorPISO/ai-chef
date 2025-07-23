@@ -118,7 +118,7 @@ return(
             <input
             type="text"
             name='ingredient'
-            placeholder="eg. chicken"
+            placeholder="add an ingredient eg. chicken"
             aria-label="Add ingredients for Recipe"
             autoFocus
             className="w-[90%] max-w-[500px] h-[50px] px-4 text-[20px] placeholder:text-[16px]  input-style "
@@ -127,7 +127,7 @@ return(
             className="
             w-[35%] h-[20%] rounded-lg bg-gradient-to-tl from-[#A33232] to-[#743030] my-[15px]  text-[#e1b5b5] font-black shadow-[#EDB1B1] shadow-sm min-text
             transition-all duration-100 hover:scale-[1.03] hover:shadow-lg 
-            " >Add Ingredients</button>
+            " >Add Ingredient</button>
         </form>}
         {ingredients.length > 1 && <IngredientsList
         ingredients={ingredients}
