@@ -27,10 +27,10 @@ export default function IngredientsList({ingredients, getRecipe, removeIngredien
   if(ingredients.length >  1){
     setListVisibility(true)
   }
-  if(ingredients.length > 4){
+  if(ingredients.length > 3){
     setShowRecGenPrompt(true)
   }
-  if (ingredients.length > 4 && genRef.current) {
+  if (ingredients.length > 3 && genRef.current) {
     setTimeout(() => {
       genRef.current.scrollIntoView({
         behavior: 'smooth',
@@ -46,7 +46,7 @@ return(
     >
         <div
         className='my-[30px] mx-1 flex-col flex-centered gap-2 w-[70%]'><h3 className='mx-auto font-bold font-cormorant-garamond min-text-2 '>What can our chef do with these?</h3>
-        <p className='text-center font-merienda min-text'>Generate a recipe base on your ingredients</p></div>
+        <p className='text-center font-merienda min-text'>Generate a recipe based on your ingredients</p></div>
         <button 
         className='mx-auto my-auto w-[25%] right-[100px] h-[40px] rounded-2xl min-text button-style '
         type="button" onClick={()=>clicked(ingredients)}>Get Recipe</button>
