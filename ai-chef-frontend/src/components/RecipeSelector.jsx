@@ -77,7 +77,7 @@ export default function RecipeSelector({savedRecipes, setSavedRecipes}) {
         <div
         className="mt-10 font-merienda min-text flex-centered flex-col">
             <div ref={renderedRef}
-            className="px-3"
+            className="px-4"
             ><ReactMarkdown>
             {selectedRecipe.recipeMarkdown}</ReactMarkdown></div>
             <div className="w-[90%] min-text my-3 flex items-center gap-1">

@@ -38,7 +38,7 @@ export default function RecipeList({recipe, resetPage, setSavedRecipes, recipeNa
        ,[showPrompt])
     return(
     <>
-         <div className='font-merienda flex-col px-3 flex-centered'>
+         <div className='font-merienda flex-col px-4 flex-centered'>
             <ReactMarkdown>{recipe}</ReactMarkdown>
          <div className='w-full flex gap-12 flex-centered mt-4'><button onClick={resetPage}
          className='button-style rounded-md my-2 w-[25%]'>Clear Recipe</button>
